@@ -1,26 +1,24 @@
-%define product		PloneWebMail
-%define version		1.0
-%define release		4
+%define Product PloneWebMail
+%define product plonewebmail
+%define name    zope-%{Product}
+%define version 1.0
+%define release %mkrel 4
 
 %define zope_minver	2.7
-
 %define zope_home	%{_prefix}/lib/zope
 %define software_home	%{zope_home}/lib/python
 
-Summary:	PloneWebMail is an IMAP email client for Plone
-Name:		zope-%{product}
+Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{release}
+Release:	%{release}
+Summary:	PloneWebMail is an IMAP email client for Plone
 License:	GPL
 Group:		System/Servers
-Source:		http://plonewebmail.openprojects.it/Members/admin/PloneWebMail-%{version}final.tar.bz2
 URL:		http://plonewebmail.openprojects.it
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
-BuildArch:	noarch
+Source:		http://plonewebmail.openprojects.it/Members/admin/PloneWebMail-%{version}final.tar.bz2
 Requires:	zope >= %{zope_minver}
-
-Provides:	plone-PloneWebMail == %{version}
-Obsoletes:	plone-PloneWebMail
+BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 PloneWebMail is an IMAP (POP3 support coming soon) email client for Plone.
@@ -63,8 +61,5 @@ if [ -f "%{_prefix}/bin/zopectl" ] && [ "`%{_prefix}/bin/zopectl status`" != "da
 fi
 
 %files
-%defattr(0644, root, root, 0755)
+%defattr(-,root,root)
 %{software_home}/Products/*
-
-
-
