@@ -18,7 +18,6 @@ URL:		http://plonewebmail.openprojects.it
 Source:		http://plonewebmail.openprojects.it/Members/admin/PloneWebMail-%{version}final.tar.bz2
 Requires:	zope >= %{zope_minver}
 BuildArch:  noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 PloneWebMail is an IMAP (POP3 support coming soon) email client for Plone.
