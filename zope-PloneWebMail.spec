@@ -11,7 +11,7 @@
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Summary:	PloneWebMail is an IMAP email client for Plone
+Summary:	IMAP email client for Plone
 License:	GPL
 Group:		System/Servers
 URL:		http://plonewebmail.openprojects.it
