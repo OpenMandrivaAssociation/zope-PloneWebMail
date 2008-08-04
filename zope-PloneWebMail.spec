@@ -2,7 +2,7 @@
 %define product plonewebmail
 %define name    zope-%{Product}
 %define version 1.0
-%define release %mkrel 7
+%define release %mkrel 8
 
 %define zope_minver	2.7
 %define zope_home	%{_prefix}/lib/zope
