@@ -14,7 +14,7 @@ Release:	%{release}
 Summary:	IMAP email client for Plone
 License:	GPL
 Group:		System/Servers
-URL:		http://plonewebmail.openprojects.it
+URL:		https://plonewebmail.openprojects.it
 Source:		http://plonewebmail.openprojects.it/Members/admin/PloneWebMail-%{version}final.tar.bz2
 Requires:	zope >= %{zope_minver}
 BuildArch:  noarch
